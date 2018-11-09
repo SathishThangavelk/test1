@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+       <link rel="stylesheet" href="bootstrap.css" >
+       <script>
+            function myFunction()
+            {
+                var person, group, birth, nature, contact;
+                person=document.getElementById("name").fullName;
+                group=document.getElementById("department").depart;
+                birth=document.getElementById("age-old").old;
+                nature=document.getElementById("gender").sex;
+                contact=document.getElementById("email").mail;
+            }
+            function myOutput()
+            {
+                <div>
+                        <td>document.getElementById("demo1").innerHTML=person;</td>
+                        <td>document.getElementById("demo2").innerHTML=department;</td>
+                        <td>document.getElementById("demo3").innerHTML=birth;</td>
+                        <td>document.getElementById("demo4").innerHTML=nature;</td>
+                        <td>document.getElementById("demo5").innerHTML=contact;</td>
+                </div>
+                    
+            }
+            var array=[
+                {name:"sarath",department:"EIE",age:"23",gender:"Male",email:"sarath@gmail.com"},
+                {name:"dhanapal",department:"EEE",age:"21",gender:"Male",email:"dhanapal@gmail.com"},
+                {name:"sathish",department:"CSE",age:"24",gender:"Male",email:"sathish@gmail.com"},
+
+            ]
+            
+            </script> 
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#">welcome</a>
+                 </div>
+                <ul class="nav navbar-nav">
+                    <li class="active" ><a href="#">By Sarath</a> </li>
+                    <li><a href="http://www.google.com">Google</a></li>
+                    <li><a href="http://www.gmail.com">Gmail</a></li>
+                    <li><a href="http://www.facebook.com">Facebook</a></li>
+                    <li><a href="http://www.whatsapp.com">Whatsapp</a></li>
+                    <li><a href="http://www.youtube.com">Youtube</a></li>
+                    <li><a href="http://www.kritilabs.com">Kritilabs webside</a></li>
+                    <li><a href="http://www.instagram.com">Instagram</a></li>
+                    <li><a href="http://www.cricbuzz.com">Cricket score</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <form class="form-horizontal">
+                    <fieldset>
+                        <legent><h2>Enter the personal information:</h2></legent>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="name">Name</label>
+                    <div class="col-sm-5">
+                        <input type="fullName" class="form-control" id="name" placeholder="enter the name" name="name">
+                    </div>
+                </div>                
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="department">Department</label>
+                    <div class="col-sm-5">
+                        <input type="depart" class="form-control" id="department" placeholder="enter department" name="department">
+                 </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="age-old">Age</label>
+                    <div class="col-sm-5">
+                        <input type="old" class="form-control" id="age-old" placeholder="enter the age" name="age-old">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="gender">Gender</label>
+                    <div class="col-sm-5">
+                        <input type="sex" class="form-control" id="gender" placeholder="enter gender" name="gender">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email</label> 
+                    <div class="col-sm-5">
+                    <input type="mail" class="form-control" id="email" placeholder="enter email" name="email"> 
+                    </div>
+                </div>
+             <center>
+                <button type="button" class="btn btn-primary" onclick="myFunction()">submit</button>
+            </center>
+                 </fieldset>
+                </form>  `
+              <br><br>
+                <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Department</td>
+                        <td>Age</td>
+                        <td>Gender</td>
+                        <td>Email</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sarath</td>
+                        <td>EIE</td>
+                        <td>23</td>
+                        <td>Male</td>
+                        <td>sarath@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Dhanapal</td>
+                        <td>EEE</td>
+                        <td>21</td>
+                        <td>Male</td>
+                        <td>dhanapal@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sathish</td>
+                        <td>EIE</td>
+                        <td>23</td>
+                        <td>Male</td>
+                        <td>sathish@gamil.com</td>
+                    </tr>
+                    <tr>
+                        <submit onclick="myOutput"></submit>
+                        <div>
+                     <p id="demo1"></p>
+                     <p id="demo2"></p>
+                     <p id="demo3"></p>
+                     <p id="demo4"></p>
+                     <p id="demo5"></p>
+                     </div>
+                    </tr>
+                   
+                </tbody>
+
+                </table>
+                </div>  
+               
+                
+               
+    </body>
+</html>
