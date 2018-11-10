@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function concat(){
+    var first= document.getElementById("first").value;
+    var second = document.getElementById("second").value;
+    var result = document.getElementById("result");
+    result.innerText = first + " " + second;
+}
+</script>
+</head>
+<body>
+<input type="text" id="first" value="hello">
+<input type="text" id="second" value="world">
+<button onclick="concat()">Concat</button>
+<div id="result">waiting for result</div>
+</body>
+</html> 
